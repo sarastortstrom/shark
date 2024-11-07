@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Sharks</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>The many types of sharks</h1>
+        <a href=index.html>HOME</a>
+    </header>
+
+    <section>
+        <h2>About Sharks</h2>
+        <p>
+            There are many differnt breeds of sharks. They come in different sizes, temperments and colors. 
+        </p>
+        <p>
+            Different sharks are also found in different areas of the world and ahve different migration and feeding paterns.  
+        </p>
+    </section>
+
+    <aside>
+        <h2>Did You Know?</h2>
+        <p>The smallest shark is the Dwarf Lantern Shark and is only 8 inches long!</p>
+    </aside>
+
+    <section>
+        <h2>Types of Sharks</h2>
+        <ul>
+            <li>Great White Shark</li>
+            <li>Hammerhead Shark</li>
+            <li>Tiger Shark</li>
+            <li>Whale Shark</li>
+            <li>Blacktip Reef Shark</li>
+        </ul>
+    </section>
+    <img src="https://cdn11.bigcommerce.com/s-pr9amv4/images/stencil/1280x1280/products/36332/78966/SK502z__58152.1523578433.jpg?c=2" alt="">
+    <section>
+        <h2>Shark Size Comparison</h2>
+        <table>
+            <tr>
+                <th>Shark Type</th>
+                <th>Average Length (ft)</th>
+                <th>Average Weight (lbs)</th>
+            </tr>
+            <tr>
+                <td>Great White Shark</td>
+                <td>16-20</td>
+                <td>4,200</td>
+            </tr>
+            <tr>
+                <td>Hammerhead Shark</td>
+                <td>13-15</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>Whale Shark</td>
+                <td>40</td>
+                <td>41,000</td>
+            </tr>
+        </table>
+    </section>
+    <!-- Contact Section -->
+    <div id="contact" class="section section-bg">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="row">
+                <div class="col s12 m6">
+                    <form>
+                        <div class="input-field">
+                            <input id="name" type="text" class="validate">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="message" class="materialize-textarea"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit" class="btn waves-effect waves-light">Send</button>
+                    </form>
+                </div>
+                <div class="col s12 m6">
+                    <h5>Visit Us</h5>
+                    <p>123 Bakery St,<br> Sweet City, SC 12345</p>
+                    <p><i class="material-icons">phone</i> (123) 456-7890</p>
+                    <p><i class="material-icons">email</i> contact@bakerydelight.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+   <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="https://mauioceancenter.com/wp-content/uploads/2020/11/IMG_7789-retouched-web.jpg" alt="Nature 1"></a>
+    <a class="carousel-item" href="#two!"><img src="https://thefossilexchange.com/wp-content/uploads/2022/10/download-41.jpeg" alt="Nature 2"></a>
+    <a class="carousel-item" href="#three!"><img src="https://preview.redd.it/ik6tzb83mug71.jpg?width=1080&crop=smart&auto=webp&s=6c18c0a27684ccdcf6467c04ec4dd1f3e6277a11" alt="Nature 3"></a>
+    <a class="carousel-item" href="#four!"><img src="https://u4d2z7k9.rocketcdn.me/wp-content/uploads/2021/10/Untitled-design-41.jpg" alt="Nature 4"></a>
+    <a class="carousel-item" href="#five!"><img src="https://static.inaturalist.org/photos/173383734/large.png" alt="Nature 5"></a>
+  </div>
+ 
+ 
+  <!-- Materialize JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <!-- Initialize Carousel -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.carousel');
+      var instances = M.Carousel.init(elems, {
+        // Add options here if needed
+        duration: 200, // Speed of the transition (in ms)
+        shift: 0,      // Horizontal shift of each item
+        dist: -100,    // Distance between the items in the carousel
+        padding: 10,   // Padding between non-active items
+        numVisible: 5, // Number of visible items at once
+        indicators: true // Dots below the carousel for each item
+      });
+    });
+  </script>
+
+<ul class="collapsible">
+    <li>
+        <div class="collapsible-header"><i class="material-icons"></i>First Item</div>
+        <div class="collapsible-body"><span>This is the content of the first item.</span></div>
+    </li>
+    <li>
+        <div class="collapsible-header"><i class="material-icons"></i>Second Item</div>
+        <div class="collapsible-body"><span>This is the content of the second item.</span></div>
+    </li>
+    <li>
+        <div class="collapsible-header"><i class="material-icons"></i>Third Item</div>
+        <div class="collapsible-body"><span>This is the content of the third item.</span></div>
+    </li>
+ </ul>
+  <script>
+ 
+ 
+        // Initialize collapsible
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.collapsible');
+            var instances = M.Collapsible.init(elems);
+        });
+  
+   </script>
+ 
+
+    <footer>
+        <p>Contact us: info@sharksrcool.com | &copy; 2024 sharksRcool</p>
+        <div id="feedback-section" class="section container">
+            <h2>Subscribe for Updates</h2>
+            <form onsubmit="submitEmail(event)">
+                <div class="input-field">
+                    <input id="email" type="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <button type="submit" class="btn waves-effect waves-light">Subscribe</button>
+            </form>
+            <div id="email-response"></div>
+        </div>
+     
+    </footer>
+    <script>
+        // Initialize modal
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+ 
+ 
+        // Function to display selected pastry
+        function displayPastry() {
+            const selectedPastry = document.querySelector('input[name="pastry"]:checked').value;
+            document.getElementById('pastry-response').innerText = `You selected: ${selectedPastry}`;
+        }
+        // Function to handle email subscription form submission
+        function submitEmail(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            document.getElementById('email-response').innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+            document.getElementById('email').value = ''; // Clear the input
+ 
+ 
+            // Display modal
+            const modalText = document.getElementById('modal-content-text');
+            modalText.innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+            const modal = M.Modal.getInstance(document.getElementById('modal1'));
+            modal.open();
+        }
+    </script>
+ 
+</body>
+</html>
